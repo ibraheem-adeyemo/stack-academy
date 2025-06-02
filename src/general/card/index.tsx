@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { HeartIcon } from "@radix-ui/react-icons";
 import { generateClassName } from "lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 
 type CourseCardProps = {
   image: string;
@@ -24,7 +25,9 @@ const CourseCard: React.FC<CourseCardProps> = ({
 
   return (
     <div className="bg-background rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-      <img src={image} alt={title} className="w-full h-48 object-cover" />
+      <div className="relative h-60">
+        <Image src={image} alt={title} fill />
+      </div>
 
       <div className="p-4 space-y-2">
         <div className="flex justify-between items-start">
