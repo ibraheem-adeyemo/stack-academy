@@ -6,7 +6,7 @@ import WhyTopStack from "general/why-topstack";
 export default function Home() {
   return (
     <main>
-      <div className="px-4px md:px-[10rem]">
+      <div className="px-4px md:px-[4rem] lg:px-[10rem]">
         <CustomMenubar />
         <MainBanner />
         <CareerBootcamp />

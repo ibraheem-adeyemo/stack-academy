@@ -14,7 +14,7 @@ const CareerBootcamp = () => {
           Our transformative training courses have helped thousands of students
           launch new careers in tech.
         </p>
-        <div className="mt-5 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0">
+        <div className="mt-5 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-0">
           {weProfide.map((item, i) => (
             <div key={i} className="flex md:items-center">
               <DisplayWithCheck content={item} />
@@ -22,7 +22,7 @@ const CareerBootcamp = () => {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-25 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-25 items-center">
         {courses.map((course, i) => (
           <CourseCard key={i} {...course} />
         ))}

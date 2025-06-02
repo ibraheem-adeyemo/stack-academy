@@ -26,7 +26,7 @@ const BuildWebContent = () => {
 
 const BuildWeb = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-5 gap-[2rem]">
+    <div className="grid grid-cols-1 lg:grid-cols-5 gap-[2rem]">
       <div className="md:col-span-3">
         <BuildWebContent />
       </div>
