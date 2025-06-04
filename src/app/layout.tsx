@@ -34,8 +34,8 @@ export default function RootLayout({
         <ToastProvider>
           <Theme>
             <>
-            <CustomMenubar />
-            {children}
+              <CustomMenubar />
+              {children}
             </>
           </Theme>
         </ToastProvider>

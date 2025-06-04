@@ -1,5 +1,5 @@
 // components/SpiralCalendarIcon.tsx
-import React from 'react';
+import React from "react";
 
 type Props = {
   date: Date;
@@ -7,7 +7,9 @@ type Props = {
 
 export const SpiralCalendarIcon = ({ date }: Props) => {
   const day = date.getDate();
-  const month = date.toLocaleString('default', { month: 'short' }).toUpperCase();
+  const month = date
+    .toLocaleString("default", { month: "short" })
+    .toUpperCase();
   const year = date.getFullYear();
 
   return (
@@ -29,10 +31,11 @@ export const SpiralCalendarIcon = ({ date }: Props) => {
   );
 };
 
-
 export const PaperCalendar: React.FC<Props> = ({ date = new Date() }) => {
   const day = date.getDate();
-  const month = date.toLocaleString('default', { month: 'short' }).toUpperCase();
+  const month = date
+    .toLocaleString("default", { month: "short" })
+    .toUpperCase();
   const year = date.getFullYear();
 
   return (
@@ -54,5 +57,3 @@ export const PaperCalendar: React.FC<Props> = ({ date = new Date() }) => {
     </div>
   );
 };
-
-

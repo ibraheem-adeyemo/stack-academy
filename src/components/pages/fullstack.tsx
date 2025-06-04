@@ -4,17 +4,17 @@ import WhatYouWillLearn from "general/what-you-will-learn";
 import { anotherBenefits, stacks } from "lib/mock/mock";
 import React from "react";
 
-const FrontendPage = () => {
+const FullstackPage = () => {
   return (
     <div className="px-4px md:px-[4rem] lg:px-[10rem]">
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-20">
         <div className="col-span-3">
           <CourseOverview
-            stackTitle={stacks.frontend.stackTitle}
-            stackDescription={stacks.frontend.stackDescription}
-            duration={stacks.frontend.duration}
-            youWillLearn={stacks.frontend.youWillLearn}
-            nextCohortDate={stacks.frontend.nextCohort}
+            stackTitle={stacks.fullstack.stackTitle}
+            stackDescription={stacks.fullstack.stackDescription}
+            duration={stacks.fullstack.duration}
+            youWillLearn={stacks.fullstack.youWillLearn}
+            nextCohortDate={stacks.fullstack.nextCohort}
           />
         </div>
         <div className="col-span-2">
@@ -27,10 +27,10 @@ const FrontendPage = () => {
         </div>
       </div>
       <div>
-        <WhatYouWillLearn whatYouLearn={stacks.frontend.whatYouWillLearn} />
+        <WhatYouWillLearn whatYouLearn={stacks.fullstack.whatYouWillLearn} />
       </div>
     </div>
   );
 };
 
-export default FrontendPage;
+export default FullstackPage;

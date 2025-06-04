@@ -125,7 +125,6 @@ const config: Config = {
           700: "var(--color-aero-blue-700)",
           800: "var(--color-aero-blue-800)",
           900: "var(--color-aero-blue-900)",
-          
         },
         "primary-blue": {
           100: "var(--primary-blue-100)",

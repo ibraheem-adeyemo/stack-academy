@@ -62,7 +62,7 @@ const StudentRegistration = () => {
     }
   };
 
-  console.log(loading, error, success)
+  console.log(loading, error, success);
 
   const handleSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
@@ -113,13 +113,15 @@ const StudentRegistration = () => {
 
       showToast({
         type: "success",
-        message: 'Your registration is completed successfully'
+        message: "Your registration is completed successfully",
       });
-      
+
       setSuccess(true);
     } catch (err: unknown) {
-
-      const errorMessage = err && typeof err === 'object' && 'message' in err ? (err as { message: string}).message : 'Something went wrong'    
+      const errorMessage =
+        err && typeof err === "object" && "message" in err
+          ? (err as { message: string }).message
+          : "Something went wrong";
       showToast({
         type: "success",
         message: errorMessage,

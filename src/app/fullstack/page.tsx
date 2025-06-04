@@ -1,10 +1,9 @@
 import React from "react";
+import FullstackPageComponent from "@/components/pages/fullstack";
 
 const FullstackPage = () => {
   return (
-    <div>
-      <h1>FullstackPage</h1>
-    </div>
+    <FullstackPageComponent /> 
   );
 };
 

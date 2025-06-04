@@ -1,10 +1,8 @@
-import FrontendPage from '@/components/pages/frontend'
-import React from 'react'
+import FrontendPage from "@/components/pages/frontend";
+import React from "react";
 
 const page = () => {
-  return (
-    <FrontendPage />
-  )
-}
+  return <FrontendPage />;
+};
 
-export default page
+export default page;
