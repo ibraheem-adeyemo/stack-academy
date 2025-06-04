@@ -1,6 +1,5 @@
 import BuildWeb from "general/build-web/build-web";
 import StudentRegistration from "general/form/registration-form";
-import CustomMenubar from "general/menu-bar";
 import React from "react";
 
 const RegistrationPage = () => {

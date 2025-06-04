@@ -62,6 +62,8 @@ const StudentRegistration = () => {
     }
   };
 
+  console.log(loading, error, success)
+
   const handleSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
     setLoading(true);
