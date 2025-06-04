@@ -62,8 +62,6 @@ const StudentRegistration = () => {
     }
   };
 
-  console.log(loading, success, error);
-
   const handleSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -132,7 +130,7 @@ const StudentRegistration = () => {
 
   return (
     <form
-      className="max-w-4xl mx-auto p-6 space-y-6 bg-white shadow-md rounded-md"
+      className="max-w-4xl mx-auto p-6 space-y-6 shadow-md rounded-md text-white"
       onSubmit={handleSubmit}
     >
       <h2 className="text-2xl font-bold">

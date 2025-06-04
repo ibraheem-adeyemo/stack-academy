@@ -73,7 +73,7 @@ const CustomMenubar = () => {
 
   return (
     <>
-      <div className="hidden lg:block">
+      <div className="hidden lg:block px-4px md:px-[4rem] lg:px-[10rem]">
         <DesktopMenu />
       </div>
       <div className="block lg:hidden">

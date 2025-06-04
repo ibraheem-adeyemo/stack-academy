@@ -1,3 +1,4 @@
+import { urls } from "constants/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -19,7 +20,7 @@ const MainBanner = () => {
             projects, and become job-ready in months — not years.
           </p>
           <div className="flex justify-center gap-4">
-            <Link href='/registeration' className="bg-white text-active-blue-600 font-bold px-6 py-3 rounded-lg">
+            <Link href={urls.register} className="bg-white text-active-blue-600 font-bold px-6 py-3 rounded-lg">
               Join the Next Cohort
             </Link>
             <button className="border border-white px-6 py-3 rounded-lg">

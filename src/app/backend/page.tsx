@@ -1,9 +1,10 @@
 import React from "react";
+import BackendPageComponent from "@/components/pages/backend";
 
 const BackendPage = () => {
   return (
     <div>
-      <h1>BackendPage</h1>
+      <BackendPageComponent />
     </div>
   );
 };
