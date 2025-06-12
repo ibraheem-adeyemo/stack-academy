@@ -173,3 +173,41 @@ export const stacks = {
     ],
   },
 };
+
+export const faqs = [
+  {
+    question: "What courses does TopStak Tech Academy offer?",
+    answer:
+      "We offer professional training in frontend development, backend development, fullstack engineering, mobile app development, data structures & algorithms, and career mentorship programs."
+  },
+  {
+    question: "Do I need any prior programming experience?",
+    answer:
+      "No prior experience is required for our beginner courses. We provide foundational training to help absolute beginners get started, while also offering advanced tracks for experienced learners."
+  },
+  {
+    question: "Are the courses fully online or onsite?",
+    answer:
+      "We offer both onsite training at our physical location in Ede, Osun State, and online classes to accommodate students who prefer remote learning."
+  },
+  {
+    question: "Will I receive a certificate after completion?",
+    answer:
+      "Yes. Upon successful completion of your program, you will receive a certificate of completion that is recognized by our partners and helpful for your job applications."
+  },
+  {
+    question: "Does TopStak provide job placement assistance?",
+    answer:
+      "Yes. We provide career support, including CV reviews, technical interview coaching, and connections to internship and job opportunities."
+  },
+  {
+    question: "How can I enroll in a course?",
+    answer:
+      "You can browse our courses on the website, select your preferred track, and register directly online. Our admissions team will reach out to guide you through the next steps."
+  },
+  {
+    question: "Can I pay my tuition in installments?",
+    answer:
+      "Yes, we provide flexible payment plans that allow you to spread your tuition fee over a convenient schedule."
+  },
+];

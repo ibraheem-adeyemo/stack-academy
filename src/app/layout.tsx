@@ -5,6 +5,7 @@ import "./globals.css";
 import { Theme } from "@radix-ui/themes";
 import { ToastProvider } from "contexts/toast-context";
 import CustomMenubar from "general/menu-bar";
+import Footer from "general/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
             <>
               <CustomMenubar />
               {children}
+              <Footer />
             </>
           </Theme>
         </ToastProvider>

@@ -17,8 +17,8 @@ const CourseOverview = ({
   duration,
 }: CourseOverviewProps) => {
   return (
-    <div className="col-span-3">
-      <h2 className="font-extrabold text-3xl tracking-wide leading-15">
+    <div className="px-10 lg:px-0">
+      <h2 className="font-extrabold lg:text-3xl lg:tracking-wide lg:leading-15">
         {stackTitle}
       </h2>
 
