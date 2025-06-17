@@ -6,7 +6,7 @@ import React from "react";
 
 const BackendPage = () => {
   return (
-    <div className="px-4px md:px-[4rem] lg:px-[10rem]">
+    <div className="px-4px md:px-[4rem] lg:px-10">
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-20">
         <div className="col-span-3">
           <CourseOverview

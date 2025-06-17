@@ -5,7 +5,7 @@ import React from "react";
 
 const MainBanner = () => {
   return (
-    <div className="h-[33rem] rounded-3xl overflow-hidden mt-10 relative">
+    <div className="h-[33rem] rounded-3xl overflow-hidden relative">
       <div className="relative h-200">
         <Image src="/francis-odeyemi-u1QJm4o7cXk-unsplash.jpg" fill alt="" />
       </div>

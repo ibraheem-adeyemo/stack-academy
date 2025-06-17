@@ -18,10 +18,10 @@ const CourseBrief = (props: CourseBriefProps) => {
       </div>
       <div className="border-b-2 pb-5 border-active-blue-100 mx-5">
         <h3 className="mt-5 text-2xl font-bold text-center">{enrolled}</h3>
-        <div className="relative">
+        <div className="flex relative justify-center">
           <Link
             href={urls.register}
-            className="border block bg-active-red-700 shadow-xl hover:bg-active-red-500 text-white cursor-pointer font-semibold text-xl my-6 px-10 py-4 tracking-wide rounded-4xl"
+            className="border block bg-active-red-700 shadow-xl text-center hover:bg-active-red-500 text-white cursor-pointer font-semibold text-xl my-6 px-10 py-4 tracking-wide rounded-4xl w-max"
           >
             Register for the next cohort now
           </Link>

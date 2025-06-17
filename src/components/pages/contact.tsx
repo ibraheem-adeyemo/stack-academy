@@ -1,6 +1,12 @@
 "use client";
 
+import { useToast } from "hooks/toast-hook";
+import { supabaseClient } from "lib/supa-base-client";
 import { useState } from "react";
+
+const facebookLink = "https://web.facebook.com/profile.php?id=61577408601864";
+const instagram = "https://www.instagram.com/thetopstacks/";
+const twitter = "https://x.com/TopstackAcademy";
 
 const ContactPage = () => {
   const [form, setForm] = useState({
@@ -10,24 +16,40 @@ const ContactPage = () => {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const supabase = supabaseClient();
+  const { showToast } = useToast();
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Submitted form data:", form);
-    
-    alert("Thank you for reaching out. We will get back to you shortly.");
-    setForm({ name: "", email: "", subject: "", message: "" });
+    try {
+      console.log("Submitted form data:", form);
+      await supabase.from("portfolio_data").insert([form]);
+
+      setForm({ name: "", email: "", subject: "", message: "" });
+      showToast({
+        type: "success",
+        message: "Thank you, your message has been sent",
+      });
+    } catch (error) {
+      console.log(error)
+      showToast({
+        type: "error",
+        message:
+          "Sorry, your message couldn't been sent. You can reach us via whatsapp or any of our social media handle thank you",
+      });
+    }
   };
 
   return (
-    <div className="min-h-screen bg-white text-gray-800 py-20 px-6 md:px-20">
+    <div className="min-h-screen bg-white text-gray-800 px-6 md:px-20">
       <h1 className="text-4xl font-bold text-center mb-12">Contact Us</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-
         <div className="space-y-6">
           <div>
             <h3 className="text-2xl font-semibold mb-2">Visit Our Office</h3>
@@ -47,10 +69,24 @@ const ContactPage = () => {
           <div className="mt-8">
             <h3 className="text-2xl font-semibold mb-2">Follow Us</h3>
             <div className="flex space-x-4">
-                
-              <a href="#" className="text-blue-600 hover:text-blue-800 font-semibold">Facebook</a>
-              <a href="#" className="text-blue-400 hover:text-blue-600 font-semibold">Twitter</a>
-              <a href="#" className="text-pink-500 hover:text-pink-700 font-semibold">Instagram</a>
+              <a
+                href={facebookLink}
+                className="text-blue-600 hover:text-blue-800 font-semibold"
+              >
+                Facebook
+              </a>
+              <a
+                href={twitter}
+                className="text-blue-400 hover:text-blue-600 font-semibold"
+              >
+                Twitter
+              </a>
+              <a
+                href={instagram}
+                className="text-pink-500 hover:text-pink-700 font-semibold"
+              >
+                Instagram
+              </a>
             </div>
           </div>
         </div>
@@ -113,7 +149,6 @@ const ContactPage = () => {
             </button>
           </form>
         </div>
-
       </div>
 
       {/* Google Map Placeholder */}

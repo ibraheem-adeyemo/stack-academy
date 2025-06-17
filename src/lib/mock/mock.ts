@@ -178,36 +178,87 @@ export const faqs = [
   {
     question: "What courses does TopStak Tech Academy offer?",
     answer:
-      "We offer professional training in frontend development, backend development, fullstack engineering, mobile app development, data structures & algorithms, and career mentorship programs."
+      "We offer professional training in frontend development, backend development, fullstack engineering, mobile app development, data structures & algorithms, and career mentorship programs.",
   },
   {
     question: "Do I need any prior programming experience?",
     answer:
-      "No prior experience is required for our beginner courses. We provide foundational training to help absolute beginners get started, while also offering advanced tracks for experienced learners."
+      "No prior experience is required for our beginner courses. We provide foundational training to help absolute beginners get started, while also offering advanced tracks for experienced learners.",
   },
   {
     question: "Are the courses fully online or onsite?",
     answer:
-      "We offer both onsite training at our physical location in Ede, Osun State, and online classes to accommodate students who prefer remote learning."
+      "We offer both onsite training at our physical location in Ede, Osun State, and online classes to accommodate students who prefer remote learning.",
   },
   {
     question: "Will I receive a certificate after completion?",
     answer:
-      "Yes. Upon successful completion of your program, you will receive a certificate of completion that is recognized by our partners and helpful for your job applications."
+      "Yes. Upon successful completion of your program, you will receive a certificate of completion that is recognized by our partners and helpful for your job applications.",
   },
   {
     question: "Does TopStak provide job placement assistance?",
     answer:
-      "Yes. We provide career support, including CV reviews, technical interview coaching, and connections to internship and job opportunities."
+      "Yes. We provide career support, including CV reviews, technical interview coaching, and connections to internship and job opportunities.",
   },
   {
     question: "How can I enroll in a course?",
     answer:
-      "You can browse our courses on the website, select your preferred track, and register directly online. Our admissions team will reach out to guide you through the next steps."
+      "You can browse our courses on the website, select your preferred track, and register directly online. Our admissions team will reach out to guide you through the next steps.",
   },
   {
     question: "Can I pay my tuition in installments?",
     answer:
-      "Yes, we provide flexible payment plans that allow you to spread your tuition fee over a convenient schedule."
+      "Yes, we provide flexible payment plans that allow you to spread your tuition fee over a convenient schedule.",
+  },
+];
+export const courses2 = [
+  {
+    id: 1,
+    title: "Fullstack Software Engineering",
+    description:
+      "Master front-end, back-end, databases, APIs, deployment, and system design. Become a complete software engineer.",
+    duration: "6 Months",
+    href: "fullstack",
+    // image: "/fullstack-course.jpg",
+    image: "/francis-odeyemi-u1QJm4o7cXk-unsplash.jpg",
+  },
+  {
+    id: 2,
+    title: "Frontend Engineering (React, Next.js)",
+    description:
+      "Learn modern front-end development with React, Next.js, TypeScript, and build professional scalable web apps.",
+    duration: "4 Months",
+    href: "frontend",
+    // image: "/frontend-course.jpg",
+    image: "/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg",
+  },
+  {
+    id: 3,
+    title: "Backend Engineering (Node.js, Express, Databases)",
+    description:
+      "Learn to build scalable backend applications, REST APIs, authentication, and system architecture.",
+    duration: "4 Months",
+    href: "backend",
+    image: "/desola-lanre-ologun-tWjzmNXKup4-unsplash.jpg",
+  },
+  {
+    id: 4,
+    title: "UI/UX Design",
+    description:
+      "Master user interface design, wireframing, prototyping, and design tools like Figma to create amazing products.",
+    duration: "3 Months",
+    href: "ui-ux",
+    image: "/desola-lanre-ologun-7d4LREDSPyQ-unsplash.jpg",
+    // image: "/uiux-course.jpg",
+  },
+  {
+    id: 5,
+    title: "Product Management",
+    description:
+      "Learn product strategy, user research, roadmaps, and managing product teams with real-life industry case studies.",
+    duration: "2 Months",
+    href: "product-manager",
+    // image: "/product-management.jpg",
+    image: "/francis-odeyemi-u1QJm4o7cXk-unsplash.jpg",
   },
 ];

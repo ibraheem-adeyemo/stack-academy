@@ -1,4 +1,5 @@
 import MainBanner from "general/banners/main-banner";
+import CallToAction from "general/call-to-action";
 import CareerBootcamp from "general/career-bootcamp";
 import WhyTopStack from "general/why-topstack";
 
@@ -10,6 +11,7 @@ export default function Home() {
         <CareerBootcamp />
       </div>
       <WhyTopStack />
+      <CallToAction />
     </main>
   );
 }

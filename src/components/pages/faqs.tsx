@@ -11,9 +11,10 @@ const FAQPage = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen py-20 px-6 md:px-20 text-gray-800">
-
-      <h1 className="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h1>
+    <div className="bg-white min-h-screen px-6 md:px-20 text-gray-800">
+      <h1 className="text-4xl font-bold text-center mb-12">
+        Frequently Asked Questions
+      </h1>
 
       <div className="max-w-4xl mx-auto space-y-6">
         {faqs.map((faq, index) => (
@@ -26,9 +27,7 @@ const FAQPage = () => {
               <span>{activeIndex === index ? "−" : "+"}</span>
             </button>
             {activeIndex === index && (
-              <div className="p-5 border-t text-gray-600">
-                {faq.answer}
-              </div>
+              <div className="p-5 border-t text-gray-600">{faq.answer}</div>
             )}
           </div>
         ))}
