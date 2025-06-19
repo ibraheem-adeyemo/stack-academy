@@ -1,7 +1,11 @@
-export const Handburger: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+export const Handburger: React.FC<React.SVGProps<SVGSVGElement>> = ({
+  width = "15",
+  height = "15",
+  ...props
+}) => (
   <svg
-    width="15"
-    height="15"
+    width={width}
+    height={height}
     viewBox="0 0 15 15"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -29,5 +33,19 @@ export const CheckIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
       fillRule="evenodd"
       clipRule="evenodd"
     ></path>
+  </svg>
+);
+
+export const WhatsappIcon: React.FC<React.SVGProps<SVGSVGElement>> = (
+  props,
+) => (
+  <svg
+    viewBox="0 0 32 32"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="white"
+    className="w-7 h-7"
+    {...props}
+  >
+    <path d="M16 .396C7.164.396.001 7.56.001 16.396c0 2.885.756 5.585 2.084 7.951L.01 32l7.839-2.048a15.857 15.857 0 0 0 8.151 2.229c8.836 0 16-7.164 16-16S24.836.396 16 .396zm0 29.195a13.06 13.06 0 0 1-6.671-1.823l-.479-.285-4.651 1.214 1.239-4.53-.311-.504a13.035 13.035 0 1 1 10.873 5.928zm7.382-9.875c-.404-.202-2.389-1.18-2.759-1.316-.37-.135-.641-.202-.912.202s-1.044 1.316-1.28 1.586c-.235.27-.47.304-.874.101-.404-.202-1.708-.63-3.255-2.01-1.203-1.073-2.015-2.397-2.248-2.802-.235-.404-.026-.622.176-.823.18-.18.404-.47.605-.705.202-.235.27-.404.404-.674.135-.27.067-.505-.034-.705-.101-.202-.912-2.211-1.248-3.025-.33-.793-.666-.686-.912-.699l-.777-.014c-.27 0-.705.101-1.073.505s-1.407 1.377-1.407 3.36 1.44 3.897 1.64 4.165c.202.27 2.835 4.336 6.871 6.077 4.036 1.74 4.036 1.16 4.759 1.087.723-.067 2.389-.974 2.723-1.913.336-.94.336-1.743.235-1.913-.101-.17-.37-.27-.777-.471z"></path>
   </svg>
 );

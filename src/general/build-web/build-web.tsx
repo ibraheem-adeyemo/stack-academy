@@ -2,7 +2,7 @@ import DisplayWithCheck from "general/display/display-with-check";
 import { benefits } from "lib/mock/mock";
 import React from "react";
 
-const BuildWebContent = () => {
+export const BuildWebContent = () => {
   return (
     <div className="bg-active-blue-100 p-[3rem] rounded-2xl">
       <div className="text-active-blue-900 mb-[2rem]">

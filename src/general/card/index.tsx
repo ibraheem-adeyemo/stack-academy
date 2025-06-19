@@ -52,7 +52,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
           </span>
           <Link
             href={link}
-            className="bg-active-blue-700 text-white text-sm px-4 py-2 rounded-md hover:bg-indigo-700 transition"
+            className="bg-active-blue-700 text-white text-sm px-4 py-2 rounded-md hover:bg-active-blue-400 transition"
           >
             View Course
           </Link>

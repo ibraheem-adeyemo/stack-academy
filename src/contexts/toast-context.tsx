@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { createContext, useState, ReactNode } from "react";
 
@@ -29,7 +29,7 @@ export const ToastProvider = ({ children }: { children: ReactNode }) => {
     const id = Date.now();
     setToasts((prev) => [...prev, { ...toast, id }]);
 
-   setTimeout(() => {
+    setTimeout(() => {
       setToasts((prev) => prev.filter((t) => t.id !== id));
     }, 40000);
   };
